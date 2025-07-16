@@ -53,5 +53,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('n', '<leader>gg', ':Neogit<CR>')
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float, { desc = 'Open diagnostics float window' })
 
 -- vim: ts=2 sts=2 sw=2 et
